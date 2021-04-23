@@ -7,7 +7,7 @@ import { PrimeNGConfig } from 'primeng/api';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Prismatic';
+  title = 'Investoperior';
 
   constructor(private primengConfig: PrimeNGConfig) {}
 
