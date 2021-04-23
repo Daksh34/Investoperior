@@ -1,0 +1,250 @@
+<!-- 
+<style>
+    .multisteps-form__form {
+      transition: max-height 0.9s ease-out;
+    }
+  </style>
+  
+  <section class="popular-deals section bg-gray">
+    
+    <div class="container">
+      <div class="multisteps-form" style="padding-top: 2px;">
+        <div class="row" #slider>
+          <div class="col-12 col-lg-12 m-auto">
+            <div class="multisteps-form__form">
+              <div class="multisteps-form__panel shadow p-4 rounded bg-white slider-panels" id="poldtls"
+                data-animation="scaleIn">
+                <h3 class="multisteps-form__title">Policy Details</h3>
+                <div class="multisteps-form__content">
+                  
+                  <div style="display: block;">
+                    
+                    <div class="clearfix">&nbsp;</div>
+  
+                    <div class="col-sm-12 col-md-12 card shadow-sm card-body">
+                      <h2>Member (Proposer Details ) </h2>
+                      <div class="clearfix">&nbsp;</div>
+  
+                      <div class="widget personal-info">
+                        <div class="row">
+                          <div class="col-12 col-sm-2"> <span class="blue-text">First Name:</span> </div>
+                          <div class="col-12 col-sm-4  mt-sm-0">
+                            <p> {{propdtlsFname}} </p>
+                          </div>
+                          <div class="col-12 col-sm-2"> <span class="blue-text">Last Name:</span> </div>
+                          <div class="col-12 col-sm-4 mt-sm-0">
+                            <p> {{propdtlsLname}} </p>
+                          </div>
+                        </div>
+  
+                        <div class="clearfix">&nbsp;</div>
+  
+                        <div class="row">
+                          <div class="col-12 col-sm-2"> <span class="blue-text">Country:</span> </div>
+                          <div class="col-12 col-sm-4  mt-sm-0">
+                            <select class="multisteps-form__select form-control" [(ngModel)]="Selectedpoldtls_Country"
+                              (change)="ddlpoldtlsCountry($event)">
+                              <option value="" selected>Select</option>
+                              <option *ngFor="let c of poldtlsCountryddl" [value]="c.Country_id"> {{ c.Country_name }}
+                              </option>
+                             
+                            </select>
+                            <div *ngIf="ispoldtlsCountryddlValid">
+                              <span class='text-danger'>Please select Country.</span>
+                            </div>
+  
+                          </div>
+                          <div class="col-12 col-sm-2"> <span class="blue-text">Zip Code:</span> </div>
+                          <div class="col-12 col-sm-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" maxlength="10"
+                              (keypress)="isNumber($event)" [(ngModel)]="poldtls_ZIPCode" type="text" />
+                            <div *ngIf="ispoldtls_ZIPCodeValid">
+                              <span class='text-danger'>Please enter ZIP Code.</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="row">
+                          <div class="col-12 col-sm-2"> <span class="blue-text">State:</span> </div>
+                          <div class="col-12 col-sm-4  mt-sm-0">
+                            <select class="multisteps-form__select form-control" [(ngModel)]="Selectedpoldtls_State">
+                              <option value="" selected>Select</option>
+                              <option *ngFor="let c of poldtlsStateddl" [value]="c.State_id"> {{ c.State }}
+                              </option>
+  
+                              
+                            </select>
+                            <div *ngIf="ispoldtlsStateddlValid">
+                              <span class='text-danger'>Please select State.</span>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-2"> <span class="blue-text">City:</span> </div>
+                          <div class="col-12 col-sm-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" [(ngModel)]="poldtls_City" type="text" />
+                            <div *ngIf="ispoldtls_CityValid">
+                              <span class='text-danger'>Please enter City.</span>
+                            </div>
+                           
+                          </div>
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="row">
+                          <div class="col-12 col-sm-2"> <span class="blue-text">Address:</span> </div>
+                          <div class="col-12 col-sm-10  mt-sm-0">
+                            <input class="multisteps-form__input form-control" [(ngModel)]="poldtls_Addr" type="text" />
+  
+                            <div *ngIf="ispoldtls_AddrValid">
+                              <span class='text-danger'>Please enter Address.</span>
+                            </div>
+                          </div>
+  
+                        </div>
+                        <div class="clearfix">&nbsp;</div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="clearfix">&nbsp;</div>
+  
+                    <div class="col-sm-12 col-md-12 card shadow-sm card-body">
+                      <h2>Insured Members</h2>
+                      <div class="clearfix">&nbsp;</div>
+                      <div class="row">
+                        <ng-container>
+                          <div class="col-lg-6 col-md-6">
+                            <div class="widget personal-info">
+                              
+  
+                              <div class="row">
+                                <div class="col-12 col-sm-4"> <span class="blue-text">First Name:</span> </div>
+                                <div class="col-12 col-sm-8  mt-sm-0">
+                                  <input class="multisteps-form__input form-control" [(ngModel)]="poldtls_MotherFName"
+                                    type="text" />
+                                  <div *ngIf="ispoldtls_MotherFNameValid">
+                                    <span class="text-danger">Please Enter Mother First Name</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="row">
+                                <div class="col-12 col-sm-4"> <span class="blue-text">Last Name:</span> </div>
+                                <div class="col-12 col-sm-8  mt-sm-0">
+                                  <input class="multisteps-form__input form-control" [(ngModel)]="poldtls_MotherLName"
+                                    type="text" />
+                                  <div *ngIf="ispoldtls_MotherLNameValid">
+                                    <span class="text-danger">Please Enter Mother Last Name</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="row">
+                                <div class="col-12 col-sm-4"> <span class="blue-text">Date of Birth:</span> </div>
+                                <div class="col-12 col-sm-8  mt-sm-0">
+                                  <div class="form-group">
+                                  <div class="input-group">
+                                    <input disabled type="text" class="form-control">
+                                   
+                                    <div class="input-group-btn">
+                                      <button class="btn btn-primary"
+                                              (click)="dp5.show()"
+                                              [attr.aria-expanded]="dp5.isOpen"
+                                              
+  
+                                              type="button">
+                                              <i class="fa fa-calendar"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  </div>
+                                  
+                                  <div *ngIf="ispoldtls_MotherDOBValid">
+                                    <span class="text-danger">Please Enter valid Mother DOB</span>
+                                  </div>
+                                </div>
+                              </div>
+  
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6">
+                            <div class="widget personal-info">
+                              
+  
+                              <div class="row">
+                                <div class="col-12 col-sm-4"> <span class="blue-text">First Name:</span> </div>
+                                <div class="col-12 col-sm-8  mt-sm-0">
+                                  <input class="multisteps-form__input form-control" [(ngModel)]="poldtls_FatherFName"
+                                    type="text" />
+                                  <div *ngIf="ispoldtls_FatherFNameValid">
+                                    <span class="text-danger">Please Enter First Name.</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="row">
+                                <div class="col-12 col-sm-4"> <span class="blue-text">Last Name:</span> </div>
+                                <div class="col-12 col-sm-8  mt-sm-0">
+                                  <input class="multisteps-form__input form-control" [(ngModel)]="poldtls_FatherLName"
+                                    type="text" />
+                                  <div *ngIf="ispoldtls_FatherLNameValid">
+                                    <span class="text-danger">Please Enter Last Name.</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="clearfix">&nbsp;</div>
+                              <div class="row">
+                                <div class="col-12 col-sm-4"> <span class="blue-text">Date of Birth:</span> </div>
+                                <div class="col-12 col-sm-8  mt-sm-0">
+                                  <div class="form-group">
+                                    <div class="input-group">
+                                      <input disabled type="text" class="form-control">
+                                      <div class="input-group-btn">
+                                        <button class="btn btn-primary"
+                                                (click)="dp6.show()"
+                                                [attr.aria-expanded]="dp6.isOpen"
+                                               
+                                                type="button">
+                                                <i class="fa fa-calendar"></i>
+                                        </button>
+                                      </div>
+                                    </div>
+                                    </div>
+                                 
+                                  <div *ngIf="ispoldtls_FatherDOBValid">
+                                    <span class="text-danger">Please Enter valid DOB</span>
+                                  </div>
+                                </div>
+                              </div>
+  
+  
+                            </div>
+                          </div>
+                        </ng-container>
+                        
+                        <div class="col-12 col-sm-4">
+                          &nbsp;
+                        </div>
+  
+                        <div align="right" class="col-12 col-sm-4">
+                          <button class="btn btn-primary" (click)="SaveProposalandInsuredMemInfo()">Continue</button>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+  <form #form ngNoForm id="nonseamless" method="post" name="redirect"
+      action="https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction">
+      <input type="hidden" id="encRequest" name="encRequest" [ngModel]="encRequest">
+      <input type="hidden" name="accessCode" id="accessCode" [ngModel]="accessCode">
+      <input type="hidden" name="workingKey" id="workingKey" [ngModel]="workingKey">
+    </form> -->
