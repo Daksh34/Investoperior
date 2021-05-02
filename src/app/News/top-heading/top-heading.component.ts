@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsServiceService } from '../../service/news-service.service'
-import * as $ from 'jquery'
+import { NewsServiceService } from '../../service/news-service.service';
+import * as $ from 'jquery';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-top-heading',
@@ -10,7 +11,7 @@ import * as $ from 'jquery'
 export class TopHeadingComponent implements OnInit {
 
   currentDate:Date;
-  constructor(private _services:NewsServiceService) {
+  constructor(private _services:NewsServiceService,private httpClient: HttpClient) {
     this.currentDate = new Date();
    }
 
@@ -18,9 +19,16 @@ export class TopHeadingComponent implements OnInit {
 
   ngOnInit(): void {
     //debugger;
-    this._services.topHeading().subscribe((result =>{
+    // this._services.topHeading().subscribe((result =>{
+    //   //debugger;
+    //   console.log(result.data)
+    //   this.topheadingDisplay = result.data;
+    // }))
+
+    this.httpClient.get("../assets/JSONFiles/NEWS/headlines.json").subscribe((result =>{
+      //debugger;
       console.log(result)
-      this.topheadingDisplay = result.articles;
+      this.topheadingDisplay = result;
     }))
 
 

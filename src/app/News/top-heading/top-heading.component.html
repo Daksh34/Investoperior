@@ -29,14 +29,14 @@
 </div>
 <div class="content">
     <div class="collumns">
-        <div *ngFor="let d of topheadingDisplay.slice(0, 5)"  class="collumn">
+        <div *ngFor="let d of topheadingDisplay.data.slice(0, 5)"  class="collumn">
             <div class="head">
-                <span class="headline hl3">{{ (d.title.length>30)? (d.title | slice:0:30)+'....':(d.title) }}</span>
+                <span class="headline hl3" title="{{ d.title}}">{{ (d.title.length>30)? (d.title | slice:0:30)+'....':(d.title) }}</span>
                 <!-- <p><span class="headline hl4">by {{ d.author }}</span></p> -->
             </div>
             <figure class="figure">
-                <img class="media" src="{{d.urlToImage}}" alt="">
-                <figcaption class="figcaption">{{ (d.source.name) }}</figcaption>
+                <img class="media" src="{{d.image}}" alt="">
+                <figcaption class="figcaption">{{ (d.source) }}</figcaption>
             </figure>
             <p> {{ (d.description.length>110)? (d.description | slice:0:110)+'....':(d.description) }}</p>
             <footer>

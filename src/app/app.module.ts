@@ -35,6 +35,11 @@ import { Snapshot1Component } from './Home/snapshot1/snapshot1.component';
 import { Snapshot2Component } from './Home/snapshot2/snapshot2.component';
 import { Snapshot3Component } from './Home/snapshot3/snapshot3.component';
 import { Snapshot4Component } from './Home/snapshot4/snapshot4.component';
+import { HTSMIYTComponent } from './SaveMoney/htsmiyt/htsmiyt.component';
+import { BGTCIComponent } from './SaveMoney/bgtci/bgtci.component';
+import { TWTMMComponent } from './MakeMoney/twtmm/twtmm.component';
+import { TPTJComponent } from './MakeMoney/tptj/tptj.component';
+import { LearnComponent } from './Resources/learn/learn.component';
 
 
 @NgModule({
@@ -60,7 +65,12 @@ import { Snapshot4Component } from './Home/snapshot4/snapshot4.component';
     Snapshot1Component,
     Snapshot2Component,
     Snapshot3Component,
-    Snapshot4Component
+    Snapshot4Component,
+    HTSMIYTComponent,
+    BGTCIComponent,
+    TWTMMComponent,
+    TPTJComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,

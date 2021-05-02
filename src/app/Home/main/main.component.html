@@ -11,7 +11,7 @@
                 Featured</div>
             <div id="featured__card_1-0" class="comp featured__card mntl-block">
                 <div id="featured-card__container_1-0" class="comp featured-card__container mntl-block">
-                    <div id="feature̥d-card__background_1-0" class="comp featured-card__background bg-image-container"
+                    <div id="featured-card__background_1-0" class="comp featured-card__background bg-image-container"
                         style="background-image: linear-gradient(to bottom, transparent 0, rgba(0,0,0,.75) 100%), url('https://www.thebalance.com/thmb/ewg6lvixYukIrsEzQojP3gjfMWE=/768x0/filters:contrast(10):no_upscale()/GettyImages-1225831428-382a0129361c4d0b8d8036551968a471.jpg')">
                     </div>
                     <a id="featured-card__content_1-0"
@@ -132,14 +132,14 @@
                 <div id="must-reads__card-list_1-0"   class="comp is-active js-must-reads__card-list must-reads__card-list mntl-block"
                 [class.is-active] = "step === 0"
                  data-listname="0">
-                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of investNews.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of investNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
                         <a id="must-reads__card_1-0"
                             class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
                             data-doc-id="" data-tax-levels="News of the Day"
                             href="{{d.url}}" data-cta="">
                             <div class="card__content" data-tag="News of the Day">
                                 <div class="card__header"></div>
-                                <span class="card__title"><span class="card__title-text">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
                                 <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
                                     data-tracking-container="true">
                                     <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
@@ -148,7 +148,7 @@
                                             By &nbsp;</div>
                                         <div id="byline--simple__author_2-0"
                                             class="comp byline--simple__author mntl-text-block">
-                                            {{ (d.source.name) }}</div>
+                                            {{ (d.source) }}</div>
                                     </div>
                                     <div id="displayed-date_2-0" class="comp displayed-date">
                                         Updated {{currentDate | date:'MMMM dd,yyyy'}}
@@ -161,14 +161,14 @@
                 <div id="must-reads__card-list_1-0-1" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
                 [class.is-active] = "step === 1"
                 data-listname="1">
-                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of stockNews.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of stockNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
                         <a id="must-reads__card_1-0"
                             class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
                             data-doc-id="" data-tax-levels="News of the Day"
                             href="{{d.url}}" data-cta="">
                             <div class="card__content" data-tag="News of the Day">
                                 <div class="card__header"></div>
-                                <span class="card__title"><span class="card__title-text">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
                                 <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
                                     data-tracking-container="true">
                                     <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
@@ -177,7 +177,7 @@
                                             By &nbsp;</div>
                                         <div id="byline--simple__author_2-0"
                                             class="comp byline--simple__author mntl-text-block">
-                                            {{ (d.source.name) }}</div>
+                                            {{ (d.source) }}</div>
                                     </div>
                                     <div id="displayed-date_2-0" class="comp displayed-date">
                                         Updated {{currentDate | date:'MMMM dd,yyyy'}}
@@ -190,14 +190,14 @@
                 <div id="must-reads__card-list_1-0-2" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
                 [class.is-active] = "step === 2"
                 data-listname="2">
-                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of budgetNews.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of budgetNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
                         <a id="must-reads__card_1-0"
                             class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
                             data-doc-id="" data-tax-levels="News of the Day"
                             href="{{d.url}}" data-cta="">
                             <div class="card__content" data-tag="News of the Day">
                                 <div class="card__header"></div>
-                                <span class="card__title"><span class="card__title-text">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
                                 <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
                                     data-tracking-container="true">
                                     <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
@@ -206,7 +206,7 @@
                                             By &nbsp;</div>
                                         <div id="byline--simple__author_2-0"
                                             class="comp byline--simple__author mntl-text-block">
-                                            {{ (d.source.name) }}</div>
+                                            {{ (d.source) }}</div>
                                     </div>
                                     <div id="displayed-date_2-0" class="comp displayed-date">
                                         Updated {{currentDate | date:'MMMM dd,yyyy'}}
@@ -219,14 +219,14 @@
                 <div id="must-reads__card-list_1-0-3" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
                 [class.is-active] = "step === 3"
                 data-listname="3">
-                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of bankNews.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of bankNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
                         <a id="must-reads__card_1-0"
                             class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
                             data-doc-id="" data-tax-levels="News of the Day"
                             href="{{d.url}}" data-cta="">
                             <div class="card__content" data-tag="News of the Day">
                                 <div class="card__header"></div>
-                                <span class="card__title"><span class="card__title-text">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
                                 <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
                                     data-tracking-container="true">
                                     <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
@@ -235,7 +235,7 @@
                                             By &nbsp;</div>
                                         <div id="byline--simple__author_2-0"
                                             class="comp byline--simple__author mntl-text-block">
-                                            {{ (d.source.name) }}</div>
+                                            {{ (d.source) }}</div>
                                     </div>
                                     <div id="displayed-date_2-0" class="comp displayed-date">
                                         Updated {{currentDate | date:'MMMM dd,yyyy'}}
@@ -248,14 +248,14 @@
                 <div id="must-reads__card-list_1-0-4" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
                 [class.is-active] = "step === 4"
                 data-listname="4">
-                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of loansNews.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of loansNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
                         <a id="must-reads__card_1-0"
                             class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
                             data-doc-id="" data-tax-levels="News of the Day"
                             href="{{d.url}}" data-cta="">
                             <div class="card__content" data-tag="News of the Day">
                                 <div class="card__header"></div>
-                                <span class="card__title"><span class="card__title-text">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
                                 <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
                                     data-tracking-container="true">
                                     <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
@@ -264,7 +264,7 @@
                                             By &nbsp;</div>
                                         <div id="byline--simple__author_2-0"
                                             class="comp byline--simple__author mntl-text-block">
-                                            {{ (d.source.name) }}</div>
+                                            {{ (d.source) }}</div>
                                     </div>
                                     <div id="displayed-date_2-0" class="comp displayed-date">
                                         Updated {{currentDate | date:'MMMM dd,yyyy'}}

@@ -123,11 +123,12 @@ body{
 	font-weight: 500;
     transition: all 200ms linear;
 }
-.nav-item:hover .nav-link{
+/* .nav-item:hover .nav-link{
 	color: #8167a9 !important;
-}
+} */
 .nav-item.active .nav-link{
 	color: #777 !important;
+	border:solid blue;	
 }
 .nav-link {
 	position: relative;
@@ -135,6 +136,7 @@ body{
 	display: inline-block;
 }
 .nav-item:after{
+	border:solid blue;	
 	position: absolute;
 	bottom: -5px;
 	left: 0;
@@ -395,14 +397,16 @@ body.hero-anime #switch{
 .dropdown-item {
 	font-size: larger;
 	padding: 3px 15px;
-	color: #212121;
+	color: #000000;
 	border-radius: 2px;
     transition: all 200ms linear;
+	
 }
 .dropdown-item:hover, 
 .dropdown-item:focus {
 	color: #fff;
-	background-color: rgba(129,103,169,.6);
+	/* background-color: rgba(129,103,169,.6); */
+	background-color: #b508c0;
 }
 
 body.dark{
@@ -416,7 +420,7 @@ body.dark h1{
 	color: #fff;
 }
 body.dark h1 span{
-    transition-delay: 0ms !important;
+    transition-delay: 0ms !important; 
 }
 body.dark p{
 	color: #fff;

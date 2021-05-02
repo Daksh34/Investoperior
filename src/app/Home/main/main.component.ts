@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit, ElementRef, Input, ViewChild } from '
 import { FirebaseServiceService } from '../../service/firebase-service.service';
 import { NewsServiceService } from '../../service/news-service.service';
 import { DatePipe } from '@angular/common';
+import { HttpClient } from "@angular/common/http";
 
 
 @Component({
@@ -38,7 +39,8 @@ export class MainComponent implements AfterViewInit, OnInit {
   currentDate:Date;
 
   myDate = new Date();
-  constructor(private _elRef: ElementRef, public fireservice: FirebaseServiceService,private _services:NewsServiceService,private datePipe: DatePipe) {
+  constructor(private _elRef: ElementRef, public fireservice: FirebaseServiceService,private _services:NewsServiceService,
+    private datePipe: DatePipe,private httpClient: HttpClient) {
     //this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
     this.currentDate = new Date();
   }
@@ -244,24 +246,51 @@ export class MainComponent implements AfterViewInit, OnInit {
 
     })
 
-    this._services.investNews().subscribe((result =>{
-      this.investNews = result.articles;
+    // this._services.investNews().subscribe((result =>{
+    //   //debugger;
+    //   this.investNews = result.data;
+    // }))
+    this.httpClient.get("../assets/JSONFiles/NEWS/crypto.json").subscribe((result =>{
+      //debugger;
+      console.log(result)
+      this.investNews = result;
     }))
 
-    this._services.stockNews().subscribe((result =>{
-      this.stockNews = result.articles;
+    // this._services.stockNews().subscribe((result =>{
+    //   this.stockNews = result.data;
+    // }))
+    this.httpClient.get("../assets/JSONFiles/NEWS/stocks.json").subscribe((result =>{
+      //debugger;
+      console.log(result)
+      this.stockNews = result;
     }))
 
-    this._services.budgetNews().subscribe((result =>{
-      this.budgetNews = result.articles;
+    // this._services.budgetNews().subscribe((result =>{
+    //   this.budgetNews = result.data;
+    // }))
+    this.httpClient.get("../assets/JSONFiles/NEWS/budgeting.json").subscribe((result =>{
+      //debugger;
+      console.log(result)
+      this.budgetNews = result;
+    }))
+    
+
+    // this._services.bankNews().subscribe((result =>{
+    //   this.bankNews = result.data;
+    // }))
+    this.httpClient.get("../assets/JSONFiles/NEWS/banking.json").subscribe((result =>{
+      //debugger;
+      console.log(result)
+      this.bankNews = result;
     }))
 
-    this._services.bankNews().subscribe((result =>{
-      this.bankNews = result.articles;
-    }))
-
-    this._services.loansNews().subscribe((result =>{
-      this.loansNews = result.articles;
+    // this._services.loansNews().subscribe((result =>{
+    //   this.loansNews = result.data;
+    // }))
+    this.httpClient.get("../assets/JSONFiles/NEWS/loans.json").subscribe((result =>{
+      //debugger;
+      console.log(result)
+      this.loansNews = result;
     }))
   }
 

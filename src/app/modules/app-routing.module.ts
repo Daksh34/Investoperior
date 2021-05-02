@@ -11,6 +11,14 @@ import { Featured1Component } from '../Home/featured1/featured1.component';
 import { Featured2Component } from '../Home/featured2/featured2.component';
 import { Snapshot1Component } from '../Home/snapshot1/snapshot1.component';
 import { Snapshot2Component } from '../Home/snapshot2/snapshot2.component';
+
+import { HTSMIYTComponent } from '../SaveMoney/htsmiyt/htsmiyt.component';
+import { BGTCIComponent } from '../SaveMoney/bgtci/bgtci.component';
+import { TWTMMComponent } from '../MakeMoney/twtmm/twtmm.component';
+import { TPTJComponent } from '../MakeMoney/tptj/tptj.component';
+
+import { LearnComponent } from '../Resources/learn/learn.component';
+
 import { SystemDashboardComponent, CarouselMasterComponent, TestimonyMasterComponent, PrismoAdvtgComponent } from '../system/system-index';
 import { UserDashboardComponent, } from '../user/user-index';
 
@@ -28,7 +36,6 @@ const appRoutes: Routes = [
         ] 
       },
       { path: 'home', redirectTo: '/' },
-
       {
         path: 'mutual-funds', children: [
           { path: '', component: MutualfundComponent },
@@ -38,13 +45,17 @@ const appRoutes: Routes = [
         ]
       },
       { path: 'stocks', children: [
-        { path: '', component: StockComponent },
-        { path: 'how-to-invest-in-stocks', component: HTIIStocksComponent },
-      ]
-    
+          { path: '', component: StockComponent },
+          { path: 'how-to-invest-in-stocks', component: HTIIStocksComponent },
+        ]
       },
       
+      { path: 'save-money', component: HTSMIYTComponent },
+      { path: 'what-is-compound-interest', component: BGTCIComponent },
+      { path: 'make-money-online', component: TWTMMComponent },
+      { path: 'best-part-time-jobs', component: TPTJComponent },
 
+      { path: 'investing-basics', component: LearnComponent },
     ],
   },
   {
@@ -65,7 +76,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes, { enableTracing: true, relativeLinkResolution: 'legacy' })],
+  imports: [RouterModule.forRoot(appRoutes, { enableTracing: true })],
   exports: [RouterModule]
 })
 

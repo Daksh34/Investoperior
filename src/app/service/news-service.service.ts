@@ -8,15 +8,16 @@ import { Observable } from 'rxjs';
 export class NewsServiceService {
 
   constructor(private _http:HttpClient) { }
-  TopHeadnewsApiUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b70b29b718774d3e82fd6a54ae213f8d";
-  newsApiUrl = "https://newsapi.org/v2/everything?q=business&apiKey=b70b29b718774d3e82fd6a54ae213f8d"
-  Invest = "https://newsapi.org/v2/everything?q=crypto&apiKey=b70b29b718774d3e82fd6a54ae213f8d";
-  StockNews = "https://newsapi.org/v2/everything?q=stock&apiKey=b70b29b718774d3e82fd6a54ae213f8d";
-  budgetingNews = "https://newsapi.org/v2/everything?q=budgeting&apiKey=b70b29b718774d3e82fd6a54ae213f8d";
-  bankingNews = "https://newsapi.org/v2/everything?q=banking&apiKey=b70b29b718774d3e82fd6a54ae213f8d";
-  loanNews = "https://newsapi.org/v2/everything?q=loans&apiKey=b70b29b718774d3e82fd6a54ae213f8d";
+  TopHeadnewsApiUrl = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&sources=cnn,-bbc&countries=us";
+  newsApiUrl = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&sources=cnn,-bbc&countries=us"
+  Invest = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&keywords=crypto&countries=us";
+  StockNews = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&keywords=stocks&countries=us";
+  budgetingNews = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&keywords=budgeting&countries=us";
+  bankingNews = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&keywords=banking&countries=us";
+  loanNews = "http://api.mediastack.com/v1/news?access_key=bd108dcfd103f7707511d0414745acf4&keywords=loans&countries=us";
   
-
+  //bd108dcfd103f7707511d0414745acf4 - hardleydax
+  //f0f5279b2e60bef6396bb102bc43630a - dpatel.dp34
   topHeading():Observable<any>
   {
     return this._http.get(this.TopHeadnewsApiUrl)

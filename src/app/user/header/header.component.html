@@ -6,7 +6,7 @@
 				<div class="col-12">
 					<nav class="navbar navbar-expand-md navbar-light">
 					
-						<a class="navbar-brand" [routerLink]="['/']" href="#"><img src="assets/fonts/LOGO.png" alt=""></a>	
+						<a class="navbar-brand" [routerLink]="['/']" href="#"><img src="../../../assets/images/investoperior_logo_PNG.png" alt=""></a>	
 						
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
 									<a class="nav-link" [routerLink]="['/mutual-funds']" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mutual Funds</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" routerLink="/stocks" href="#">Stocks</a>
+									<a class="nav-link" [routerLink]="['/stocks']"  href="#">Stocks</a>
 								</li>
 								<!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link" href="#">Calculators</a>
@@ -27,19 +27,23 @@
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Save Money</a>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">How To Save Money In Your 20's</a>
-										<a class="dropdown-item" href="#">Beginner's Guide To Compound Interest</a>
+										<a class="dropdown-item" href="#" [routerLink]="['/save-money']">How To Save Money In Your 20's</a>
+										<a class="dropdown-item" href="#" [routerLink]="['/what-is-compound-interest']">Beginner's Guide To Compound Interest</a>
 									</div>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link" href="#">Make Money</a>
 									<div class="dropdown-menu">
-										<a class="dropdown-item" href="#">Top Ways To Make Money Online</a>
-										<a class="dropdown-item" href="#">Top Part Time Jobs</a>
+										<a class="dropdown-item" href="#" [routerLink]="['/make-money-online']">Top Ways To Make Money Online</a>
+										<!-- <a class="dropdown-item" href="#" [routerLink]="['/make-money-online']">Top Part Time Jobs</a> -->
 									</div>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link" href="#">Resources</a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#" [routerLink]="['/investing-basics']">Learn Investing</a>
+										<!-- <a class="dropdown-item" href="#" [routerLink]="['/make-money-online']">Top Part Time Jobs</a> -->
+									</div>
 								</li>
 							</ul>
 						</div>
