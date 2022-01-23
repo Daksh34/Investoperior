@@ -1,0 +1,50 @@
+<!-- 
+<div class="" style="display: flex;">
+
+
+  <figure *ngFor="let d of topheadingDisplay.slice(0, 5)" class="snip1312">
+    <div class="image" style="height: 300px;"><img src="{{d.urlToImage}}" alt="pr-sample13"/></div>
+    <figcaption>
+        <div class="date">
+          <span class="day">01</span>
+          <span class="month">Dec</span>
+        </div>
+        <h5>{{ (d.title.length>30)? (d.title | slice:0:30)+'....':(d.title) }}</h5>
+        <p>
+            {{ (d.description.length>110)? (d.description | slice:0:110)+'....':(d.description) }}
+        </p>
+        <footer>
+          <div class="views"><a href="{{d.url}}">Read More >></a></div>
+        </footer>
+    </figcaption>
+  </figure>
+
+</div> -->
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+        <header>Daily News</header>
+    </div>
+    <div class="subhead">York, MA - {{currentDate | date:'MMMM dd, yyyy'}} </div>
+</div>
+<div class="content">
+    <div class="collumns">
+        <div *ngFor="let d of topheadingDisplay.data.slice(0, 5)"  class="collumn">
+            <div class="head">
+                <span class="headline hl3" title="{{ d.title}}">{{ (d.title.length>30)? (d.title | slice:0:30)+'....':(d.title) }}</span>
+                <!-- <p><span class="headline hl4">by {{ d.author }}</span></p> -->
+            </div>
+            <figure class="figure">
+                <img class="media" src="{{d.image}}" alt="">
+                <figcaption class="figcaption">{{ (d.source) }}</figcaption>
+            </figure>
+            <p> {{ (d.description.length>110)? (d.description | slice:0:110)+'....':(d.description) }}</p>
+            <footer>
+                <div class="views"><a target="_blank" href="{{d.url}}">Read More >></a></div>
+              </footer>
+        </div>
+        
+        
+    </div>
+</div>
+

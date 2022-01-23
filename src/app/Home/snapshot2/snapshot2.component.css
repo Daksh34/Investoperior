@@ -1,0 +1,483 @@
+.perfMktgListSCTemplate .article.mntl-external-basic-sublayout {
+    margin-top: 0;
+}
+
+@media (min-width: 50em){
+.prmTemplateHtml .article, .standaloneToolTemplate .article {
+    margin-left: 0;
+}}
+@media (min-width: 40em){
+.article, .article-intro {
+    padding-top: 0;
+}}
+@media (min-width: 80em){
+.article {
+    width: 100%;
+    max-width: none;
+    padding-right: 0;
+}}
+
+
+
+.article, .article-container, .article-container__content, .article-heading, .article-subheading, .litho-article-meta {
+    position: relative;
+}
+.article {
+    margin: 0 auto;
+}
+
+article, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+@media (min-width: 40em){
+.perfMktgListSCTemplate .article-header {
+    padding-top: .625rem;
+}}
+
+@media (min-width: 40em){
+.article-header {
+    margin-bottom: .8rem;
+    display: block;
+}}
+
+.article-header {
+    flex-flow: column;
+}
+
+.article-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+
+.article-container.article-header, .article-container.article-intro, .article-container.article-outro, .article-container.list-sc-item__container, .list-sc--finance .article-header.loc, .list-sc--finance .breadcrumbs {
+    max-width: 62.5rem;
+}
+
+@media (min-width: 40em){
+.perfMktgListSCTemplate .article-header {
+    padding-top: .625rem;
+}}
+
+@media (min-width: 80em){
+.article-container {
+    width: 100%;
+    margin: 0 auto;
+}}
+
+.article-container {
+    padding: 0 .625rem;
+}
+
+@media (min-width: 40em){
+.article-header {
+    display: block;
+}}
+
+@media (min-width: 54em){
+.perfMktgListSCTemplate .article-heading, .perfMktgListSCTemplate .article-subheading, .perfMktgListSCTemplate .breadcrumbs, .productReviewTemplate .article-heading, .productReviewTemplate .article-subheading, .productReviewTemplate .breadcrumbs {
+    text-align: left;
+}}
+@media (min-width: 40em){
+.article-heading:first-child, .breadcrumbs+.article-heading {
+    margin-top: 1rem;
+}}
+
+.article-heading, .article-subheading {
+    z-index: 5;
+}
+
+@media (min-width: 50em){
+.article-heading {
+    padding: 0;
+}}
+
+.article-heading {
+    font-weight: 400;
+    word-wrap: break-word;
+    line-height: 1.1;
+    margin: 0 0 .5rem;
+    color: #222;
+    font-family: Publico,Georgia,serif!important;
+}
+
+.article-header .article-heading__highlight {
+    padding-left: 0;
+    background-image: linear-gradient(0deg,#f9ddf2 50%,transparent 50%);
+}
+
+.theme-1 .article-heading__highlight, .theme-2 .article-heading__highlight, .theme-3 .article-heading__highlight, .theme-4 .article-heading__highlight {
+    display: inline;
+    padding-right: .3125rem;
+}
+
+.article-heading+.article-subheading {
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 50em){
+.article-heading+.article-subheading {
+    margin-top: .75rem;
+}}
+.article-heading+.article-subheading {
+    margin: .25rem 0 0;
+}
+
+.article-subheading {
+    color: #666;
+    font-family: Rubik,Arial,sans-serif!important;
+}
+@media (min-width: 65em){
+h2 {
+    font-size: 1.5rem;
+}}
+h2 {
+    line-height: 1.2;
+}
+
+
+/* /////////loc content//////// */
+
+@media (min-width: 80em){
+.mntl-external-basic-sublayout .content, .mntl-external-basic-sublayout .pre-content {
+    margin-left: 0;
+}}
+
+.mntl-external-basic-sublayout .mntl-external-basic-sublayout-content {
+    min-height: 30em;
+    margin: .5rem 0 1rem;
+}
+.mntl-external-basic-sublayout .content>* {
+    margin-left: 0!important;
+    margin-right: 0!important;
+}
+
+.is-hidden {
+    display: none!important;
+}
+
+@media (min-width: 50em){
+.prmTemplateHtml .article, .standaloneToolTemplate .article {
+    margin-left: 0;
+}}
+@media (min-width: 40em){
+.article, .article-intro {
+    padding-top: 0;
+}}
+@media (min-width: 80em){
+.article {
+    width: 100%;
+    max-width: none;
+    padding-right: 0;
+}}
+
+@media (min-width: 40em){
+.article {
+    margin-top: 0;
+}}
+
+.article .article-content {
+    margin-left: 0;
+}
+.expert-content {
+    min-height: 0;
+}
+@media (min-width: 34em){
+.expert-content, .mntl-amp__article {
+    font-size: 1.0625rem;
+}}
+.expert-content, .mntl-amp__article {
+    line-height: 27px;
+    /* margin: .5rem 0 .2em; */
+}
+
+@media (min-width: 40em){
+.article, .article-intro {
+    padding-top: 0;
+}}
+
+.expert-content {
+    min-height: 0;
+}
+
+.content-list-sc .figure-article-caption, .content-list-sc p:not(.continue-label):not(.meta-text):not(.text-block), .content-list__body .figure-article-caption, .content-list__body p:not(.continue-label):not(.meta-text):not(.text-block), .expert-content .figure-article-caption, .expert-content p:not(.continue-label):not(.meta-text):not(.text-block), .list-sc .mntl-sc-block .figure-article-caption, .list-sc .mntl-sc-block p:not(.continue-label):not(.meta-text):not(.text-block), .mntl-amp__article .figure-article-caption, .mntl-amp__article p:not(.continue-label):not(.meta-text):not(.text-block), .mntl-text-block .figure-article-caption, .mntl-text-block p:not(.continue-label):not(.meta-text):not(.text-block) {
+    margin: .5rem 0 .875rem;
+}
+
+.mntl-sc-block-html:not(.mntl-sc-block-html-sliced) {
+    counter-reset: section;
+}
+.mntl-sc-block {
+    text-align: left;
+}
+
+.intro, p {
+    font-family: Rubik,Arial,sans-serif;
+}
+
+
+.list-sc--base .mntl-sc-block-callout {
+    clear: both;
+}
+
+.mntl-sc-block-callout.theme-experttipimportant, .mntl-sc-block-callout.theme-experttipnote, .mntl-sc-block-callout.theme-experttiptip, .mntl-sc-block-callout.theme-experttipwarning {
+    margin: 0 .75rem 1rem 1.5rem;
+}
+
+.mntl-sc-block-callout {
+    position: relative;
+}
+.mntl-sc-block {
+    text-align: left;
+}
+
+.mntl-sc-block-callout.theme-experttipimportant:before, .mntl-sc-block-callout.theme-experttipnote:before, .mntl-sc-block-callout.theme-experttiptip:before, .mntl-sc-block-callout.theme-experttipwarning:before {
+    border-right: none !important;
+}
+
+.theme-experttipimportant .mntl-sc-block-callout-body, .theme-experttipnote .mntl-sc-block-callout-body, .theme-experttiptip .mntl-sc-block-callout-body, .theme-experttipwarning .mntl-sc-block-callout-body {
+    padding: 1rem 1rem 1rem 1.75rem;
+    position: relative;
+}
+
+.theme-experttipimportant .mntl-sc-block-callout-body:before, .mntl-amp-html .theme-experttipimportant .mntl-sc-block-callout-body:before {
+    background-color: #ef6fcf !important;
+}
+.theme-experttipimportant .mntl-sc-block-callout-body:before, .theme-experttipnote .mntl-sc-block-callout-body:before, .theme-experttiptip .mntl-sc-block-callout-body:before, .theme-experttipwarning .mntl-sc-block-callout-body:before {
+    width: 2.3rem;
+    height: 2.3rem;
+    left: -1.5rem;
+    top: 0.9rem;
+    border-radius: 100%;
+    opacity: .2;
+    z-index: 1;
+}
+.theme-experttipimportant .mntl-sc-block-callout-body:after, .theme-experttipimportant .mntl-sc-block-callout-body:before, .theme-experttipnote .mntl-sc-block-callout-body:after, .theme-experttipnote .mntl-sc-block-callout-body:before, .theme-experttiptip .mntl-sc-block-callout-body:after, .theme-experttiptip .mntl-sc-block-callout-body:before, .theme-experttipwarning .mntl-sc-block-callout-body:after, .theme-experttipwarning .mntl-sc-block-callout-body:before {
+    content: '';
+    position: absolute;
+}
+
+.theme-experttipimportant .mntl-sc-block-callout-body p:before {
+    content: 'Important: ';
+}
+.mntl-sc-block-callout-body p:before {
+    display: inline;
+    font-weight: 700;
+}
+
+ .theme-experttipimportant .mntl-sc-block-callout-body:after {
+    background: url(https://www.thebalance.com/static/1.63.0/components/svg/money/important.svg?externalComponentService=performance-marketing) no-repeat #FFF;
+}
+
+.theme-experttipimportant .mntl-sc-block-callout-body:after, .theme-experttipnote .mntl-sc-block-callout-body:after, .theme-experttiptip .mntl-sc-block-callout-body:after, .theme-experttipwarning .mntl-sc-block-callout-body:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: -1.25rem;
+    top: .8rem;
+    border-top: .25rem solid #fff;
+    border-bottom: .5rem solid #fff;
+}
+
+.mntl-sc-block-callout.theme-experttipimportant:after, .mntl-sc-block-callout.theme-experttipnote:after, .mntl-sc-block-callout.theme-experttiptip:after, .mntl-sc-block-callout.theme-experttipwarning:after {
+    top: 0;
+    right: 0;
+    border-left: none !important;
+}
+
+.mntl-sc-block-callout.theme-experttipimportant:after, .mntl-sc-block-callout.theme-experttipimportant:before, .mntl-sc-block-callout.theme-experttipnote:after, .mntl-sc-block-callout.theme-experttipnote:before, .mntl-sc-block-callout.theme-experttiptip:after, .mntl-sc-block-callout.theme-experttiptip:before, .mntl-sc-block-callout.theme-experttipwarning:after, .mntl-sc-block-callout.theme-experttipwarning:before {
+    content: '';
+    width: 1rem;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #8CAFD3;
+}
+
+.expert-content h2, .mntl-amp__article h2 {
+    margin: 2rem 0 0;
+}
+
+.expert-content .btn-chop, .expert-content h1, .expert-content h2, .mntl-amp__article .btn-chop, .mntl-amp__article h1, .mntl-amp__article h2 {
+    font-family: Publico,Georgia,serif;
+}
+@media (min-width: 29em){
+.mntl-sc-block-heading {
+    font-size: 1.5rem;
+}}
+
+.mntl-sc-block {
+    text-align: left;
+}
+
+h2 {
+    line-height: 1.2;
+}
+h2, h3, h4, h5 {
+    color: #222;
+}
+h1, h2, h3 {
+    word-wrap: break-word;
+}
+
+.list-sc--base .article-content .mntl-sc-list-item {
+    overflow: visible;
+}
+.mntl-sc-list-item {
+    clear: both;
+}
+
+@media (min-width: 54em){
+.article-container.list-sc-item__container {
+    margin: 0 auto;
+}}
+
+@media (min-width: 40em){
+.article-container {
+    padding-top: .625rem;
+}}
+
+@media (min-width: 65em){
+h2.mntl-sc-list-item-title {
+    font-size: 1.5rem;
+}}
+h2.mntl-sc-list-item-title {
+    display: block;
+    margin: 0 0 1rem;
+}
+
+.expert-content h2.mntl-sc-list-item-title a.mntl-sc-block-heading__link {
+    color: #222;
+}
+
+.expert-content>:not(.quinstreet-section) .mntl-sc-block-heading__link, .expert-content>:not(.quinstreet-section) a:not([class]), .mntl-amp__article>:not(.quinstreet-section) .mntl-sc-block-heading__link, .mntl-amp__article>:not(.quinstreet-section) a:not([class]) {
+    text-decoration: none;
+    transition: all .15s ease-in-out;
+    box-shadow: inset 0 -1.5px 0 #7b96b2;
+}
+a {
+    outline: 0;
+}
+
+.list-sc--base .mntl-sc-block-comparisonlist {
+    clear: both;
+}
+
+
+@media (min-width: 35em){
+.mntl-sc-block-comparisonlist {
+    flex-direction: row;
+}}
+.mntl-sc-block-comparisonlist {
+    background: 0 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+}
+@media (min-width: 29em){
+.mntl-sc-block-comparisonlist {
+    display: flex;
+}}
+
+@media (min-width: 35em){
+.mntl-sc-block-comparisonlist__wrapper {
+    width: 50%;
+}}
+
+.mntl-sc-block-comparisonlist__wrapper {
+    flex-grow: 1;
+}
+
+.mntl-sc-block-comparisonlist__heading {
+    display: block;
+    position: relative;
+    padding-left: 2.325rem;
+    margin-bottom: .625rem;
+    font-size: 1.25rem;
+    font-family: Publico,Georgia,serif;
+}
+
+ .mntl-sc-block-comparisonlist__wrapper:nth-child(1) .mntl-sc-block-comparisonlist__heading::before {
+    background: url(https://thebalance.com/static/1.63.0/components/svg/money/circle-check.svg?externalComponentService=performance-marketing) no-repeat;
+}
+
+.mntl-sc-block-comparisonlist__heading:before {
+    top: -1px;
+    left: 1px;
+}
+.mntl-sc-block-comparisonlist__heading:after, .mntl-sc-block-comparisonlist__heading:before {
+    content: '';
+    position: absolute;
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+ .mntl-sc-block-comparisonlist__wrapper:first-child .mntl-sc-block-comparisonlist__heading::after {
+    opacity: .25;
+}
+ .mntl-sc-block-comparisonlist__wrapper:nth-child(1) .mntl-sc-block-comparisonlist__heading:after, .mntl-amp-html .mntl-sc-block-comparisonlist__wrapper:nth-child(1) .mntl-sc-block-comparisonlist__heading:after {
+    background-color: #ef6fcf;
+}
+ .mntl-sc-block-comparisonlist__wrapper .mntl-sc-block-comparisonlist__heading::after {
+    z-index: -1;
+}
+.mntl-sc-block-comparisonlist__heading:after {
+    top: -3px;
+    left: 3px;
+    opacity: .25;
+    border-radius: 100%;
+}
+
+.content-list-sc ol, .content-list-sc ul, .content-list__body ol, .content-list__body ul, .expert-content ol, .expert-content ul, .list-sc .mntl-sc-block ol, .list-sc .mntl-sc-block ul, .mntl-amp__article ol, .mntl-amp__article ul, .mntl-text-block ol, .mntl-text-block ul {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+ul.mntl-sc-block-comparisonlist__list {
+    padding-left: 0;
+}
+.mntl-sc-block-comparisonlist__list {
+    margin: 0;
+    padding: 0 1rem 0 1.675rem;
+}
+ul {
+    list-style: none;
+}
+
+.content-list-sc>:not(.quinstreet-section) li:not(.journey-nav__item):not(.journey-nav__sublist-item), .content-list__body>:not(.quinstreet-section) li:not(.journey-nav__item):not(.journey-nav__sublist-item), .expert-content>:not(.quinstreet-section) li:not(.journey-nav__item):not(.journey-nav__sublist-item), .list-sc .mntl-sc-block>:not(.quinstreet-section) li:not(.journey-nav__item):not(.journey-nav__sublist-item), .mntl-amp__article>:not(.quinstreet-section) li:not(.journey-nav__item):not(.journey-nav__sublist-item), .mntl-text-block>:not(.quinstreet-section) li:not(.journey-nav__item):not(.journey-nav__sublist-item) {
+    font-family: Rubik,Arial,sans-serif;
+    margin-bottom: .625rem;
+}
+.mntl-sc-block-comparisonlist ul.mntl-sc-block-comparisonlist__list li {
+    list-style: none;
+    position: relative;
+}
+ul.mntl-sc-block-comparisonlist__list li {
+    margin: .2rem 0 .75rem 30px;
+    font-size: 1rem;
+    padding-left: 0;
+}
+
+ .mntl-sc-block-comparisonlist__wrapper:nth-child(2) .mntl-sc-block-comparisonlist__heading::before {
+    background: url(https://thebalance.com/static/1.63.0/components/svg/money/circle-x.svg?externalComponentService=performance-marketing) no-repeat;
+}
+
+ .mntl-sc-block-comparisonlist__wrapper:nth-child(2) .mntl-sc-block-comparisonlist__heading::after {
+    background-color: #A6A6A6;
+}
+
+
+.theme-experttipnote .mntl-sc-block-callout-body:before, .mntl-amp-html .theme-experttipnote .mntl-sc-block-callout-body:before {
+    background-color: #ef6fcf;
+}
+
+.theme-experttipnote .mntl-sc-block-callout-body p:before {
+    content: 'Note: ';
+}
+.mntl-sc-block-callout-body p:before {
+    display: inline;
+    font-weight: 700;
+}
+
+.theme-experttipnote .mntl-sc-block-callout-body::after {
+    background: url(https://thebalance.com/static/1.63.0/components/svg/money/note.svg?externalComponentService=performance-marketing) no-repeat #FFF;
+}

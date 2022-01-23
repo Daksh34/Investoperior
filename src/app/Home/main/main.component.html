@@ -1,0 +1,458 @@
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height: 300px;" #containerDiv>
+    <div class="tradingview-widget-container__widget"></div>
+</div>
+<!-- TradingView Widget END -->
+
+<section id="homepage-spotlight_1-0" class="comp homepage-spotlight mntl-block" data-tracking-container="true">
+    <div id="homepage-spotlight__top_1-0" class="comp homepage-spotlight__top mntl-block">
+        <div id="homepage-spotlight__featured_1-0" class="comp homepage-spotlight__featured featured-cards mntl-block">
+            <div id="featured-cards__title_1-0" class="comp featured-cards__title mntl-text-block">
+                Featured</div>
+            <div id="featured__card_1-0" class="comp featured__card mntl-block">
+                <div id="featured-card__container_1-0" class="comp featured-card__container mntl-block">
+                    <div id="featured-card__background_1-0" class="comp featured-card__background bg-image-container"
+                        style="background-image: linear-gradient(to bottom, transparent 0, rgba(0,0,0,.75) 100%), url('https://www.thebalance.com/thmb/ewg6lvixYukIrsEzQojP3gjfMWE=/768x0/filters:contrast(10):no_upscale()/GettyImages-1225831428-382a0129361c4d0b8d8036551968a471.jpg')">
+                    </div>
+                    <a id="featured-card__content_1-0"
+                        class="comp featured-card__content card--outline card mntl-card card card--no-image"
+                        data-doc-id="" data-tax-levels="Public Policy News"
+                        [routerLink]="['/Featured1']"
+                        href="#"
+                        data-cta="">
+                        <div class="card__content" data-tag=" News">
+                            <div class="card__header"></div>
+                            <!-- <span class="card__title"><span class="card__title-text">{{ homedtls[0].t1 }}</span></span> -->
+                            <div id="article-meta--simple_1-0" class="comp article-meta--simple mntl-block"
+                                data-tracking-container="true">
+                                <div id="byline--simple_1-0" class="comp byline--simple mntl-block">
+                                    <div id="byline--simple__pre-author-text_1-0"
+                                        class="comp byline--simple__pre-author-text mntl-text-block">
+                                        By&nbsp;</div>
+                                    <div id="byline--simple__author_1-0"
+                                        class="comp byline--simple__author mntl-text-block">
+                                        Lissa Poirot</div>
+                                </div>
+                                <div id="displayed-date_1-0" class="comp displayed-date">
+                                    Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="featured__card_1-0-1" class="comp featured__card mntl-block">
+                <div id="featured-card__container_1-0-1" class="comp featured-card__container mntl-block">
+                    <div id="featured-card__background_1-0-1" class="comp featured-card__background bg-image-container"
+                        style="background-image: linear-gradient(to bottom, transparent 0, rgba(0,0,0,.75) 100%), url('https://www.moneyunder30.com/wp-content/uploads/2020/06/shutterstock_1100726030-333x222-c-default.jpg')">
+                    </div>
+                    <a id="featured-card__content_1-0-1"
+                        class="comp featured-card__content card--outline card mntl-card card card--no-image"
+                        data-doc-id="" data-tax-levels="Public Policy News"
+                        [routerLink]="['/Featured2']"
+                        href="#"
+                        data-cta="">
+                        <div class="card__content" data-tag="News">
+                            <div class="card__header"></div>
+                            <!-- <span class="card__title"><span class="card__title-text">{{ homedtls[0].t2 }}</span></span> -->
+                            <div id="article-meta--simple_1-0-1" class="comp article-meta--simple mntl-block"
+                                data-tracking-container="true">
+                                <div id="byline--simple_1-0-1" class="comp byline--simple mntl-block">
+                                    <div id="byline--simple__pre-author-text_1-0-1"
+                                        class="comp byline--simple__pre-author-text mntl-text-block">
+                                        By &nbsp; </div>
+                                    <div id="byline--simple__author_1-0-1"
+                                        class="comp byline--simple__author mntl-text-block">
+                                        Rob Anthes</div>
+                                </div>
+                                <div id="displayed-date_1-0-1" class="comp displayed-date">
+                                    Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="homepage-spotlight__must-reads_1-0" class="comp homepage-spotlight__must-reads must-reads mntl-block">
+            <div id="must-reads__navigation_1-0" class="comp must-reads__navigation mntl-block">
+                <div id="must-reads__section-heading_1-0" class="comp must-reads__section-heading mntl-text-block">
+                    Must Reads:</div>
+                <div id="must-reads__navigation-list_1-0"
+                    class="comp js-must-reads__navigation-list must-reads__navigation-list mntl-block">
+                    <div id="must-reads__navigation-item_1-0" (click) ="changeStep(0)" [class.is-active] = "step === 0"
+                        class="comp js-must-reads__navigation-item must-reads__navigation-item mntl-block"
+                        data-listname="0">
+                        <div id="must-reads__heading-wrapper_1-0" class="comp must-reads__heading-wrapper mntl-block">
+                            <span id="must-reads__navigation-heading_1-0"
+                                class="comp must-reads__navigation-heading mntl-text-block">
+                                Cryptocurrency</span>
+                        </div>
+                    </div>
+                    <div id="must-reads__navigation-item_1-0-1" (click) ="changeStep(1)" [class.is-active] = "step === 1"
+                        class="comp  js-must-reads__navigation-item must-reads__navigation-item mntl-block"
+                        data-listname="1">
+                        <div id="must-reads__heading-wrapper_1-0-1" class="comp must-reads__heading-wrapper mntl-block">
+                            <span id="must-reads__navigation-heading_1-0-1"
+                                class="comp must-reads__navigation-heading mntl-text-block">
+                                Stocks</span>
+                        </div>
+                    </div>
+                    <div id="must-reads__navigation-item_1-0-2" (click) ="changeStep(2)" [class.is-active] = "step === 2"
+                        class="comp js-must-reads__navigation-item must-reads__navigation-item mntl-block"
+                        data-listname="2">
+                        <div id="must-reads__heading-wrapper_1-0-2" class="comp must-reads__heading-wrapper mntl-block">
+                            <span id="must-reads__navigation-heading_1-0-2"
+                                class="comp must-reads__navigation-heading mntl-text-block">
+                                Budgeting</span>
+                        </div>
+                    </div>
+                    <div id="must-reads__navigation-item_1-0-3" (click) ="changeStep(3)" [class.is-active] = "step === 3"
+                        class="comp js-must-reads__navigation-item must-reads__navigation-item mntl-block"
+                        data-listname="3">
+                        <div id="must-reads__heading-wrapper_1-0-3" class="comp must-reads__heading-wrapper mntl-block">
+                            <span id="must-reads__navigation-heading_1-0-3"
+                                class="comp must-reads__navigation-heading mntl-text-block">
+                                Banking</span>
+                        </div>
+                    </div>
+                    <div id="must-reads__navigation-item_1-0-4" (click) ="changeStep(4)" [class.is-active] = "step === 4"
+                        class="comp js-must-reads__navigation-item must-reads__navigation-item mntl-block"
+                        data-listname="4">
+                        <div id="must-reads__heading-wrapper_1-0-4" class="comp must-reads__heading-wrapper mntl-block">
+                            <span id="must-reads__navigation-heading_1-0-4"
+                                class="comp must-reads__navigation-heading mntl-text-block">
+                                Loans</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="must-reads__card-list-container_1-0" class="comp js-must-reads__card-list-container must-reads__card-list-container mntl-block">
+                <div id="must-reads__card-list_1-0"   class="comp is-active js-must-reads__card-list must-reads__card-list mntl-block"
+                [class.is-active] = "step === 0"
+                 data-listname="0">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of investNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                        <a id="must-reads__card_1-0"
+                            class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
+                            data-doc-id="" data-tax-levels="News of the Day"
+                            href="{{d.url}}" data-cta="">
+                            <div class="card__content" data-tag="News of the Day">
+                                <div class="card__header"></div>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
+                                    data-tracking-container="true">
+                                    <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
+                                        <div id="byline--simple__pre-author-text_2-0"
+                                            class="comp byline--simple__pre-author-text mntl-text-block">
+                                            By &nbsp;</div>
+                                        <div id="byline--simple__author_2-0"
+                                            class="comp byline--simple__author mntl-text-block">
+                                            {{ (d.source) }}</div>
+                                    </div>
+                                    <div id="displayed-date_2-0" class="comp displayed-date">
+                                        Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="must-reads__card-list_1-0-1" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
+                [class.is-active] = "step === 1"
+                data-listname="1">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of stockNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                        <a id="must-reads__card_1-0"
+                            class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
+                            data-doc-id="" data-tax-levels="News of the Day"
+                            href="{{d.url}}" data-cta="">
+                            <div class="card__content" data-tag="News of the Day">
+                                <div class="card__header"></div>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
+                                    data-tracking-container="true">
+                                    <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
+                                        <div id="byline--simple__pre-author-text_2-0"
+                                            class="comp byline--simple__pre-author-text mntl-text-block">
+                                            By &nbsp;</div>
+                                        <div id="byline--simple__author_2-0"
+                                            class="comp byline--simple__author mntl-text-block">
+                                            {{ (d.source) }}</div>
+                                    </div>
+                                    <div id="displayed-date_2-0" class="comp displayed-date">
+                                        Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="must-reads__card-list_1-0-2" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
+                [class.is-active] = "step === 2"
+                data-listname="2">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of budgetNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                        <a id="must-reads__card_1-0"
+                            class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
+                            data-doc-id="" data-tax-levels="News of the Day"
+                            href="{{d.url}}" data-cta="">
+                            <div class="card__content" data-tag="News of the Day">
+                                <div class="card__header"></div>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
+                                    data-tracking-container="true">
+                                    <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
+                                        <div id="byline--simple__pre-author-text_2-0"
+                                            class="comp byline--simple__pre-author-text mntl-text-block">
+                                            By &nbsp;</div>
+                                        <div id="byline--simple__author_2-0"
+                                            class="comp byline--simple__author mntl-text-block">
+                                            {{ (d.source) }}</div>
+                                    </div>
+                                    <div id="displayed-date_2-0" class="comp displayed-date">
+                                        Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="must-reads__card-list_1-0-3" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
+                [class.is-active] = "step === 3"
+                data-listname="3">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of bankNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                        <a id="must-reads__card_1-0"
+                            class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
+                            data-doc-id="" data-tax-levels="News of the Day"
+                            href="{{d.url}}" data-cta="">
+                            <div class="card__content" data-tag="News of the Day">
+                                <div class="card__header"></div>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
+                                    data-tracking-container="true">
+                                    <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
+                                        <div id="byline--simple__pre-author-text_2-0"
+                                            class="comp byline--simple__pre-author-text mntl-text-block">
+                                            By &nbsp;</div>
+                                        <div id="byline--simple__author_2-0"
+                                            class="comp byline--simple__author mntl-text-block">
+                                            {{ (d.source) }}</div>
+                                    </div>
+                                    <div id="displayed-date_2-0" class="comp displayed-date">
+                                        Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="must-reads__card-list_1-0-4" class="comp js-must-reads__card-list must-reads__card-list mntl-block" 
+                [class.is-active] = "step === 4"
+                data-listname="4">
+                    <div id="must-reads__card-wrapper_1-0" *ngFor="let d of loansNews.data.slice(0, 3)"  class="comp must-reads__card-wrapper mntl-block">
+                        <a id="must-reads__card_1-0"
+                            class="comp must-reads__card card--no-shadow card mntl-card card card--no-image"
+                            data-doc-id="" data-tax-levels="News of the Day"
+                            href="{{d.url}}" data-cta="">
+                            <div class="card__content" data-tag="News of the Day">
+                                <div class="card__header"></div>
+                                <span class="card__title"><span class="card__title-text" title="{{ d.title }}">{{ (d.title.length>50)? (d.title | slice:0:50)+'....':(d.title) }}</span></span>
+                                <div id="article-meta--simple_2-0" class="comp article-meta--simple mntl-block"
+                                    data-tracking-container="true">
+                                    <div id="byline--simple_2-0" class="comp byline--simple mntl-block">
+                                        <div id="byline--simple__pre-author-text_2-0"
+                                            class="comp byline--simple__pre-author-text mntl-text-block">
+                                            By &nbsp;</div>
+                                        <div id="byline--simple__author_2-0"
+                                            class="comp byline--simple__author mntl-text-block">
+                                            {{ (d.source) }}</div>
+                                    </div>
+                                    <div id="displayed-date_2-0" class="comp displayed-date">
+                                        Updated {{currentDate | date:'MMMM dd,yyyy'}}
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="homepage-spotlight__snapshot_1-0" class="comp homepage-spotlight__snapshot snapshot mntl-block">
+        <div id="snapshot__title_1-0" class="comp snapshot__title mntl-text-block">
+            Average Snapshot</div>
+        <div id="snapshot__content_1-0" class="comp snapshot__content mntl-block">
+            <div id="snapshot__item_1-0" class="comp snapshot__item mntl-block">
+                <div class="snapshot__image-wrapper snapshot__trend snapshot__trend--up">
+                    <img src="https://www.thebalance.com/thmb/eEQadAlSn8Vy27ZyuFq7HHoJyaI=/400x400/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/home_buying-ef04e8344e274ca8a558358e4b791610.png"
+                        class=" snapshot__image">
+                </div>
+                <div class="snapshot__item-content">
+                    <div class="snapshot__name">
+                        AVERAGE MORTGAGE RATE
+                    </div>
+                    <!-- <span class="snapshot__value">
+                        {{ homedtls[0].AVGMort }}%
+                    </span> -->
+                </div>
+                <a [routerLink]="['/Sell-Your-Home']" href="#"
+                    class="snapshot__url"><span class="snapshot__url-text">Should You Sell Your Home While Rates Are
+                        Low?</span></a>
+            </div>
+            <div id="snapshot__item_1-0-1" class="comp snapshot__item mntl-block">
+                <div class="snapshot__image-wrapper snapshot__trend snapshot__trend--down">
+                    <img src="https://www.thebalance.com/thmb/pXWF86oVQ3REl4GNbm8ycldnOAM=/400x400/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/how_to_save-7de191760c2549ce8c82149ae6f57926.png"
+                        class=" snapshot__image">
+                </div>
+                <div class="snapshot__item-content">
+                    <div class="snapshot__name">
+                        AVERAGE SAVING RATE
+                    </div>
+                    <!-- <span class="snapshot__value">
+                        {{ homedtls[0].AVGSave }}%
+                    </span> -->
+                </div>
+                <a [routerLink]="['/best-savings-account-interest-rates']" href="#"
+                    class="snapshot__url"><span class="snapshot__url-text">Find A Better Rate Than The
+                        Average</span></a>
+            </div>
+            <div id="snapshot__item_1-0-2" class="comp snapshot__item mntl-block">
+                <div class="snapshot__image-wrapper snapshot__trend snapshot__trend--up">
+                    <img src="https://www.thebalance.com/thmb/5VUNQNySItkw0bxvLStY1n_dvkg=/400x400/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/credit_and_debt-d20beb3ef4dd4366a7952170b68be2f8.png"
+                        class=" snapshot__image">
+                </div>
+                <div class="snapshot__item-content">
+                    <div class="snapshot__name">
+                        AVERAGE CREDIT CARD INTEREST RATE
+                    </div>
+                    <!-- <span class="snapshot__value">
+                        {{ homedtls[0].AVGCredit }}%
+                    </span> -->
+                </div>
+                <!-- <a href="https://www.thebalance.com/best-credit-card-4767704" class="snapshot__url"><span
+                        class="snapshot__url-text">Find The Best Card For You</span></a> -->
+            </div>
+            <div id="snapshot__item_1-0-3" class="comp snapshot__item mntl-block">
+                <div class="snapshot__image-wrapper snapshot__trend snapshot__trend--down">
+                    <img src="https://www.thebalance.com/thmb/QJgd_z2zeYJUWfriQ5cy-y85J54=/400x400/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/taxes-19d1e6c83eab4f9caa3bc8b5ad218ad5.png"
+                        class=" snapshot__image">
+                </div>
+                <div class="snapshot__item-content">
+                    <div class="snapshot__name">
+                        DAYS TILL TAX DAY
+                    </div>
+                    <!-- <span class="snapshot__value">
+                        {{ homedtls[0].TAXDays }} days
+                    </span> -->
+                </div>
+                <!-- <a href="https://www.thebalance.com/how-to-file-a-tax-return-4147226" class="snapshot__url"><span
+                        class="snapshot__url-text">Get Ready To File Your Return</span></a> -->
+            </div>
+        </div>
+    </div>
+</section>
+<h1>LIVE MARKETS</h1>
+<div class="containerView">
+
+    <div class="cardView">
+        <div class="tradingview-widget-container" style="height: 300px;" #containerDivGlobal>
+        </div>
+    </div>
+
+    <div class="cardView">
+        <div class="tradingview-widget-container" style="height: 300px;" #containerDivBSE>
+        </div>
+    </div>
+
+    <div class="cardView">
+        <div class="tradingview-widget-container" style="height: 300px;" #containerDivNASDAQ>
+        </div>
+    </div>
+
+
+
+
+    <div class="cardView">
+        <iframe src="https://widget.coinlib.io/widget?type=full_v2&theme=light&cnt=8&pref_coin_id=1505&graph=yes"
+            width="100%" height="500px" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" border="0"
+            style="border:0;margin:0;padding:0;"></iframe>
+    </div>
+
+
+
+</div>
+<div class="" style="padding-top: 25px;">
+    <app-top-heading></app-top-heading>
+</div>
+
+
+<div class="row">
+    <!-- 24-7 Press Release Newswire Landing Page Widget Code Starts Here -->
+    <script type="text/javascript"
+        src="https://news.24-7pressrelease.com/247pr-news-widget.js?widgettitle=News Provided by 24-7PressRelease.com&amp;categories=116,&amp;showRelease=1&amp;width=auto&amp;headlinebold=1&amp;headlinesonly=0&amp;headlinecolor=2d57a1&amp;briefcolor=666666&amp;textcolor=333333&amp;typeface=arial&amp;fontsize=11&amp;width=auto&amp;headlinesepstyle=dotted&amp;showimages=1&amp;numstories=20&amp;bgcolor=ffffff&amp;urldest=247pr"></script>
+    <!-- 24-7 Press Release Newswire Landing Page Widget Code Ends Here -->
+    <!--     
+    <a class="fx-widget" data-widget="newsfeed" data-lang="en" data-post-date-color="#999" data-post-description-color="#333333" data-post-title-color="#333333" 
+    data-widget-bg-color="#FFF" data-show-image data-width="650" data-height="855" data-show-date data-title-font-size="18" data-intro-font-size="16" 
+    data-show-upper-intro data-category="news" data-section="all" data-base-url="https://www.fxempire.com" data-url="//www.fxempire.com" 
+    href="https://www.fxempire.com" rel="nofollow" style="font-family:Helvetica;font-size:16px;line-height:1.5;text-decoration:none;"> 
+    </a> -->
+
+</div>
+
+<section id="homepage-connect-section_1-0" style="overflow: hidden;" class="comp homepage-connect-section page-layout-section mntl-block"
+    data-tracking-container="true">
+    <div id="homepage-connect-section__media_1-0" class="comp homepage-connect-section__media media-callout mntl-block"
+        data-tracking-container="true">
+        <div id="tod__primary_1-0" class="comp tod__primary mntl-block">
+            <div id="tod__article_1-0" class="comp tod__article mntl-block">
+            <a href="https://www.investopedia.com/terms/s/sustainability.asp" id="tod__title_1-0" class=" tod__title mntl-text-link" data-tracking-container="true"><span class="link__wrapper">Sustainability</span></a>
+            <span id="tod__description_1-0" class="comp tod__description mntl-text-block">
+            Sustainability focuses on meeting the needs of the present without compromising the ability of future generations to meet their needs.</span>
+            <a href="https://www.investopedia.com/terms/s/sustainability.asp" id="tod__read-more_1-0" class=" tod__read-more mntl-text-link" data-tracking-container="true"><span class="link__wrapper">Read more</span></a>
+            </div>
+            <div id="tod__signup_1-0" class="comp tod__signup mntl-block">
+            <div id="tod__signup-icon_1-0" class="comp tod__signup-icon mntl-block">
+            <svg class="icon icon-term-subscribe ">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-term-subscribe"></use>
+            </svg>
+            </div>
+            
+            </div>
+            </div>
+    </div>
+    <div id="homepage-connect-section__newsletter_1-0"
+        class="comp homepage-connect-section__newsletter newsletter-signup--title-block mntl-block">
+        <div id="newsletter__label_1-0" class="comp newsletter__label mntl-text-block">
+            newsletters</div>
+        <div id="newsletter__title_1-0" class="comp newsletter__title mntl-text-block">
+            Investoperior Today</div>
+        <div id="newsletter__subtitle_1-0" class="comp newsletter__subtitle mntl-text-block">
+            Daily inspiration, tips, and coaching to reach your financial goals.</div>
+        <form id="newsletter__form_1-0" class="comp newsletter__form newsletter-signup mntl-newsletter-signup"
+            method="POST" action="/newsletter/signup">
+            <div id="mntl-newsletter-submit_1-0"
+                class="comp mntl-newsletter-submit mntl-newsletter-submit__input-wrapper">
+                <input type="hidden" name="list[]" value="">
+                <input type="hidden" name="customEventName" value="BTonetap">
+                <input type="hidden" value="b35653528b02930321cdaf957530d442" name="CSRFToken">
+                <label class="mntl-newsletter-submit__label is-vishidden" for="mntl-newsletter-submit_1-0__input">Email
+                    Address</label>
+                <input class="mntl-newsletter-submit__input" id="mntl-newsletter-submit_1-0__input" type="email"
+                    name="email" placeholder="Enter your email..." required=""
+                    pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b">
+                <div id="newsletter-signup__submit-wrapper_1-0"
+                    class="comp newsletter-signup__submit-wrapper mntl-block">
+                    <button id="newsletter-signup__submit-button_1-0"
+                        class="comp newsletter-signup__submit-button button--medium button mntl-button" type="submit">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+            <!-- <div id="mntl-newsletter-signup__success_1-0" class="comp mntl-newsletter-signup__success mntl-text-block">
+                You're in! Thanks for signing up.</div>
+            <div id="mntl-newsletter-signup__error_1-0" class="comp mntl-newsletter-signup__error mntl-text-block">
+                There was an error. Please try again.</div> -->
+        </form>
+        <!--end mntl-newsletter-signup-->
+    </div>
+</section>
