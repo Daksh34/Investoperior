@@ -15,13 +15,13 @@ import { HttpClient } from "@angular/common/http";
 
 export class MainComponent implements AfterViewInit, OnInit {
 
-  // allows for loading with any symbol
+  
   @Input() symbol: string = '';
   settings: any = {};
   settingsNSE: any = {};
   settingsNASDAQ: any = {};
   settingsGLOBAL: any = {};
-  // id for being able to check for errors using postMessage
+  
   widgetId: string = '';
   step: number = 0;
 
