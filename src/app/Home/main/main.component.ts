@@ -26,6 +26,7 @@ export class MainComponent implements AfterViewInit, OnInit {
   step: number = 0;
 
   // wanted to be able to hide the widget if the symbol passed in was invalid (don't love their sad cloud face)
+  //addedededededededede
   @ViewChild('containerDiv', { static: false }) containerDiv: ElementRef;
   @ViewChild('containerDivBSE', { static: false }) containerDivBSE: ElementRef;
   @ViewChild('containerDivNASDAQ', { static: false }) containerDivNASDAQ: ElementRef;
