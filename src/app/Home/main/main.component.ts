@@ -22,6 +22,7 @@ export class MainComponent implements AfterViewInit, OnInit {
   settingsNASDAQ: any = {};
   settingsGLOBAL: any = {};
   // id for being able to check for errors using postMessage
+  //added while stashing
   widgetId: string = '';
   step: number = 0;
 
